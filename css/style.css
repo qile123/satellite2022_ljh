@@ -112,7 +112,7 @@ body {
   font-family: "Source Sans Pro", Arial, "sans-serif";
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.7;
+  line-height: 1.42857143;
   color: #4a4a4a;
   text-align: left;
   /* background-color: #c7c7c7; */
@@ -369,10 +369,10 @@ template {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  margin-bottom: 0.6rem;
+  margin-bottom: 0rem;
   font-family: inherit;
   font-weight: 500;
-  line-height: 1.2;
+  line-height: 1.6;
   color: inherit; }
 
 h1, .h1 {
@@ -580,7 +580,7 @@ pre {
   position: relative;
   width: 100%;
   min-height: 1px;
-  padding-right: 20px;
+  padding-right: 0px;
   padding-left: 0px; }
 
 .col-sm-4 {
@@ -745,8 +745,8 @@ pre {
     max-width: 25%; }
 
   .col-sm-4 {
-    flex: 0 0 35%;
-    max-width: 35%; }
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%; }
 
   .col-sm-5 {
     flex: 0 0 41.6666666667%;
@@ -761,8 +761,8 @@ pre {
     max-width: 58.3333333333%; }
 
   .col-sm-8 {
-    flex: 0 0 65%;
-    max-width: 65%; }
+    flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%; }
 
   .col-sm-9 {
     flex: 0 0 75%;
@@ -6543,10 +6543,15 @@ footer a {
 Articles
 **/
 article {
-  padding: 1rem 0 1rem 0;
+  padding: 0rem 0 0.8rem 0;
+  margin-bottom: 1rem;
   border-bottom: 2px solid #ced1d4;
-  font-size: 1.2rem; 
+  font-size: 1.1rem; 
   /* color: #282828; */}
+  
+article h4 {
+	font-size: 1.1em;
+}
 
 article h2.article-title {
   font-size: 2.3rem;
@@ -6566,15 +6571,15 @@ Sidebar
 **/
 
 .sidebar-box-bg {
-  padding: 1rem;
+  padding: 1rem 4rem;
   background-color: #f0f0f0;
   border-radius: 0.25rem; }
 
 .sidebar-box-ag {
   margin: 1rem;
   background-color: #f0f0f0;
-  border-radius: 0.25rem; 
-  border-bottom: 2px solid #ced1d4;}
+ /* border-radius: 0.25rem; 
+  border-bottom: 2px solid #ced1d4 */;}
 /***
 Better nesting of list groups
 ***/
@@ -6613,3 +6618,73 @@ Better nesting of list groups
   border-radius: 0.25rem; }
   
 
+.block-title {
+    /* border-radius: 0.25rem; */
+	color: #fff;
+	background-color: #507dbc;
+    position: relative;
+	display: block;
+	padding: 0.3rem 1.5rem ;
+	font-weight: bold;
+	width: -webkit-fit-content;
+}
+.block-title h2{
+	color: #fff;
+	text-align: center;
+	font-size: 1.5rem;
+}
+	
+.patrons-logo{
+	display: flex;
+	flex-wrap: wrap;
+	/* height: 200px; */
+}
+
+.cc-window{
+	color: #fff;
+	background-color: #000000;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	align-items: center;
+	padding: 1em 1.8em;
+	width: 100%;
+	position: fixed;
+	overflow: hidden;
+	box-sizing: border-box;
+	font-size: 16px;
+	line-height: 1.5em;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	z-index: 9999;
+	opacity: 1;
+	transition: opacity 1s ease;
+	vertical-align: baseline;
+}
+
+.cc-message{
+	flex:1;
+}
+.cc-compliance{
+	display: flex;
+	align-items: center;
+	align-content: space-between;
+}
+.cc-btn{
+	min-width: 140px;
+	color: rgb(0, 0, 0);
+	border-color: transparent;
+	background-color: rgb(255, 255, 255);
+	flex: 1;
+	display: block;
+	padding: .4em .8em;
+	font-size: .9em;
+	font-weight: 700;
+	border-width: 2px;
+	border-style: solid;
+	text-align: center;
+	white-space: nowrap;
+	cursor: pointer;
+}

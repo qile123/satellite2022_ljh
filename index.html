@@ -5,7 +5,7 @@
 
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="shortcut icon" href="img/icon-2.png" />
+		<link rel="shortcut icon" href="img/icon-2.png" />
 
 		<link rel="stylesheet" href="css/style.css">
 		<style type="text/css">
@@ -21,24 +21,31 @@
 				align-items: center;
 				justify-content: space-between;
 			}
-            .pic {
+
+			.pic {
 				flex-grow: 3.5;
 			}
-			.pic img{
+
+			.pic img {
 				height: 115px;
 			}
-            .logo1{
+
+			.logo1 {
 				flex-grow: 1;
 			}
-			.logo2{
+
+			.logo2 {
 				flex-grow: 1;
 			}
-			.logo1 img{
+
+			.logo1 img {
 				height: 55px;
-			} 
-			.logo2 img{
+			}
+
+			.logo2 img {
 				height: 48px;
 			}
+
 			.firstword {
 				border-bottom: 2px solid #507dbc;
 			}
@@ -52,6 +59,20 @@
 	</head>
 
 	<body>
+		<!-- <div role="dialog" aria-live="polite" aria-label="cookieconsent" aria-describedby="cookieconsent:desc"
+			class="cc-window">
+			<span class="cc-message">
+				IEEE websites place cookies on your device to give you the best user experience. By using our websites,
+				you agree to the placement of these cookies. To learn more, read our
+				<a aria-label="learn more about cookies" role="button" tabindex="0"
+					href="https://www.ieee.org/security-privacy.html" target="_blank">
+					Privacy Policy
+				</a>
+			</span>
+			<div class="cc-compliance">
+				<a aria-label="dismiss cookie message" role="button" tabindex="0" onclick="ahide()" class="cc-btn">Accept & Close</a>
+			</div>
+		</div> -->
 
 		<div class="nav">
 			<div class="container">
@@ -84,164 +105,150 @@
 		<!-- Main navigation -->
 		<div class="container">
 			<nav class="navbar navbar-expand-md navbar-dark bg-primary">
-					<!-- Company name shown on mobile -->
-					<!-- <a class="navbar-brand d-md-none d-lg-none d-xl-none" href="#">MyCompany</a> -->
+				<!-- Company name shown on mobile -->
+				<!-- <a class="navbar-brand d-md-none d-lg-none d-xl-none" href="#">MyCompany</a> -->
 
-					<!-- Mobile menu toggle -->
-					<!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar"
+				<!-- Mobile menu toggle -->
+				<!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar"
 						aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button> -->
 
-					<!-- Main navigation items -->
-					<div class="collapse navbar-collapse" id="mainNavbar">
-						<ul class="navbar-nav mr-auto">
-							<li class="nav-item active">
-								<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-							</li>
+				<!-- Main navigation items -->
+				<div class="collapse navbar-collapse" id="mainNavbar">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+						</li>
 
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="org_committee.html"
-									role="button" aria-haspopup="true" aria-expanded="false">Committee</a>
-								<div class="dropdown-menu navbar-dark bg-primary">
-									<a class="dropdown-item" href="org_committee.html">Organizing Committee</a>
-									<a class="dropdown-item" href="t_committee.html">TPC Members</a>
-									<!-- <a class="dropdown-item" href="one-column.html">One column / no sidebar</a>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="org_committee.html"
+								role="button" aria-haspopup="true" aria-expanded="false">Committee</a>
+							<div class="dropdown-menu navbar-dark bg-primary">
+								<a class="dropdown-item" href="org_committee.html">Organizing Committee</a>
+								<a class="dropdown-item" href="t_committee.html">TPC Members</a>
+								<!-- <a class="dropdown-item" href="one-column.html">One column / no sidebar</a>
 									  <a class="dropdown-item"  href="text.html">Text / left sidebar</a> -->
-								</div>
-							</li>
+							</div>
+						</li>
 
 
-							<li class="nav-item">
-								<a class="nav-link" href="cfp.html">Call for Paper</a>
-							</li>
+						<li class="nav-item">
+							<a class="nav-link" href="cfp.html">Call for Paper</a>
+						</li>
 
-						
-						</ul>
-					</div>
+
+					</ul>
+				</div>
 			</nav>
 		</div>
 
 		<!-- Jumbtron / Slider -->
-			<div class="container">
-				<div id="mainCarousel" class="carousel slide" data-ride="carousel">
-					<div class="carousel-inner">
-						<div class="carousel-item active">
-							<div class="jumbotron">
-								<img src="img/1.jpg" />
-							</div>
+		<div class="container">
+			<div id="mainCarousel" class="carousel slide" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="jumbotron">
+							<img src="img/1.jpg" />
 						</div>
-
-						<div class="carousel-item">
-							<div class="jumbotron">
-								<img src="img/2.jpg" />
-							</div>
-						</div>
-						<div class="carousel-item">
-							<div class="jumbotron">
-								<img src="img/3.jpg" />
-							</div>
-						</div>
-						<div class="carousel-item">
-							<div class="jumbotron">
-								<img src="img/4.jpg" />
-							</div>
-						</div>
-						<!-- <div class="carousel-item">
-					<div class="jumbotron">
-						<img src="img/5.jpg"/>
-					</div>
-				</div> -->
-
 					</div>
 
-					<a class="carousel-control-prev" href="#mainCarousel" role="button" data-slide="prev">
-						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						<span class="sr-only">Previous</span>
-					</a>
-					<a class="carousel-control-next" href="#mainCarousel" role="button" data-slide="next">
-						<span class="carousel-control-next-icon" aria-hidden="true"></span>
-						<span class="sr-only">Next</span>
-					</a>
+					<div class="carousel-item">
+						<div class="jumbotron">
+							<img src="img/2.jpg" />
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="jumbotron">
+							<img src="img/3.jpg" />
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="jumbotron">
+							<img src="img/4.jpg" />
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="jumbotron">
+							<img src="img/5.jpg" />
+						</div>
+					</div>
+
 				</div>
+
+				<a class="carousel-control-prev" href="#mainCarousel" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#mainCarousel" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
 			</div>
+		</div>
 
 		<!-- Main content area -->
 		<main class="container">
 			<div class="row">
 
 				<!-- Main content -->
-				<div class="col-sm-8">
+				<div class="col-sm-9">
+					<div class="block-title">
+						<h2>News and Announcements</h2>
+					</div>
 					<div class="sidebar-box-bg">
-						<h2><span class="firstword">About</span> IEEE Satellite</h2>
 						<article>
-							<!-- <p class="article-meta">Posted on <time datetime="2017-05-14">14 May</time> by <a href="#" rel="author">Joe Bloggs</a></p> -->
-
-							<!-- <p>Welcome to wintry, a free CSS3 &amp; HTML5 responsive web template from <a href="#" title="ZyPOP">ZyPOP</a>. This template is completely <strong>free</strong> to use permitting a link remains back to  <a href="#" title="ZyPOP">ZyPOP</a>.</p> -->
-
-							<p> Satellite computing, as an integration of satellite systems, aerial networks,
-								terrestrial communications, and Cloud computing has been becoming an emerging computing
-								architecture and attracted intensive research interest.</p>
-
-							<p>With the global connectivity services/applications needs to be accommodated, such as
-								ubiquitous communication, smart transportation, smart city, maritime surveillance, and
-								disaster rescue, the terrestrial networks and computing alone cannot meet the needs in
-								an effective and efficient manner.</p>
-
-							<p><strong>IEEE International Conference on Satellite Computing</strong> aims to become a prime
-								international forum for both researchers and industry practitioners to exchange the
-								latest fundamental advances in state of the art and practice of Satellite computing in
-								the field of Computer Science and Electronic Engineers.</p>
-
+							<h4>IEEE SATELLITE 2022 - Hybrid Event </h4>
+							<p>IEEE Satellite 2022 will be held as a hybrid event. Presenters may present their papers
+								in person in Shenzhen or virtually. Presenters should choose the presentation format
+								after their papers have been accepted.</p>
+							<br />
+							<h4>Welcome to IEEE SATELLITE 2022!</h4>
+							<p>The 2022 IEEE International Conference on Satellite Computing will be held from 25 to 27
+								October 2022 in the beautifu and warm city of Shenzhen, China. The conference aims to
+								become a prime international forum for both researchers and industry practitioners to
+								exchange the fundamental advances in state of the art and practice of Satellite
+								computing in the field of Computer Science and Electronic Engineers.</p>
 						</article>
 
 
 					</div>
 
+					<!-- <div class="block-title">
+                    	<h2>Important Dates</h2>
+                    </div>
 					<div class="sidebar-box-bg">
-						<h2><span class="firstword">Important</span> Dates</h2>
 						<article style="padding-top: 0;">
-							<h4 style="margin-bottom: 0rem;margin-top: 1.5rem;">Abstract Date:</h4>
+							<h4 style="margin-bottom: 0rem;">Abstract Date:</h4>
 							<p style="margin-bottom: 0;"><strong>Saturday, 7 May 2022</strong></p>
 							
-							<h4 style="margin-bottom: 0rem;margin-top: 1.5rem;">Full Paper Submission Date:</h4>
+							<h4 style="margin-bottom: 0rem;margin-top: 1.2rem;">Full Paper Submission Date:</h4>
 							<p style="margin-bottom: 0;"><strong>Sunday, 15 May 2022</strong></p>
 							
-							<h4 style="margin-bottom: 0rem;margin-top: 1.5rem;">Notification of Acceptance Date:</h4>
+							<h4 style="margin-bottom: 0rem;margin-top: 1.2rem;">Notification of Acceptance Date:</h4>
 							<p style="margin-bottom: 0;"><strong>Monday, 15 August 2022</strong></p>
 							
-							<h4 style="margin-bottom: 0rem;margin-top: 1.5rem;">Final Paper Submission Date:</h4>
+							<h4 style="margin-bottom: 0rem;margin-top: 1.2rem;">Final Paper Submission Date:</h4>
 							<p style="margin-bottom: 0.5rem;"><strong>Wednesday, 31 August 2022</strong></p>
-							
+		
 						</article>
-					</div>
+					</div> -->
 
-					<!-- Example pagination Bootstrap component -->
-					<!-- <nav>
-					<ul class="pagination">
-							<li class="page-item">
-								<a class="page-link" href="#" aria-label="Previous">
-									<span aria-hidden="true">&laquo;</span>
-									<span class="sr-only">Previous</span>
-								</a>
-							</li>
-							<li class="page-item"><a class="page-link" href="#">1</a></li>
-							<li class="page-item active"><a class="page-link" href="#">2</a></li>
-							<li class="page-item"><a class="page-link" href="#">3</a></li>
-							<li class="page-item">
-								<a class="page-link" href="#" aria-label="Next">
-									<span aria-hidden="true">&raquo;</span>
-									<span class="sr-only">Next</span>
-								</a>
-							</li>
-					</ul>
-				</nav> -->
+					<div class="block-title">
+						<h2>Patrons</h2>
+					</div>
+					<div class="sidebar-box-bg">
+						<div class="patrons-logo" style="">
+							<img src="img/tiansuan.png" style="height: 180px;" />
+						</div>
+					</div>
 				</div>
 
 
 				<!-- Sidebar -->
-				<aside class="col-sm-4">
-					<div class="sidebar-box-ag">
+				<aside class="col-sm-3">
+
+					<!-- <div class="sidebar-box-ag">
 						<h2><span class="firstword">Navigation</span></h2>
 						<div class="list-group list-group-root">
 							
@@ -254,34 +261,26 @@
 							<a class="list-group-item" href="cfp.html">Call for Paper</a>
 							
 						</div>
-					</div>
+					</div> -->
 
 					<div class="sidebar-box-ag">
-						<h2><span class="firstword">Conference</span> Information</h2>
-						<article style="border-bottom: 0px">
-							<h4 style="margin-bottom: 0rem;margin-top: 0.5rem;">Conference Title:</h4>
-							<p style="margin-bottom: 0;"><strong>2022 IEEE International Conference on Satellite
-									Computing</strong></p>
-							<p>Conference Acronym: <strong>IEEE Satellite 2022</strong></p>
+						<h3><span class="firstword">Important</span> Dates</h3>
+						<article style="padding-top: 1rem;">
+							<h4 style="margin-bottom: 0rem;">Abstract Date:</h4>
+							<p style="margin-bottom: 0;"><strong>Saturday, 7 May 2022</strong></p>
 
-							<h4 style="margin-bottom: 0rem;margin-top: 1.5rem;">Conference Date:</h4>
-							<p style="margin-bottom: 0;">Start Date: <strong>Tuesday, 25 October 2022</strong></p>
-							<p>End Date: <strong>Thursday, 27 October 2022</strong></p>
+							<h4 style="margin-bottom: 0rem;margin-top: 1.2rem;">Full Paper Submission Date:</h4>
+							<p style="margin-bottom: 0;"><strong>Sunday, 15 May 2022</strong></p>
 
-							<h4 style="margin-bottom: 0rem;margin-top: 1.5rem;">Conference Location:</h4>
-							<p style="margin-bottom: 0;">Country: <strong>China</strong></p>
-							<p>City: <strong>Shenzhen, Guangdong</strong></p>
+							<h4 style="margin-bottom: 0rem;margin-top: 1.2rem;">Notification of Acceptance Date:</h4>
+							<p style="margin-bottom: 0;"><strong>Monday, 15 August 2022</strong></p>
+
+							<h4 style="margin-bottom: 0rem;margin-top: 1.2rem;">Final Paper Submission Date:</h4>
+							<p style="margin-bottom: 0.5rem;"><strong>Wednesday, 31 August 2022</strong></p>
+
 						</article>
 					</div>
 
-					<div class="sidebar-box-ag">
-						<h2 style="margin-bottom: 1.5rem;"><span class="firstword">Conference</span> Sponsorship</h2>
-						<!-- <ul>
-							<li><a href="https://www.bupt.edu.cn/" style="font-size: 1.0rem;">Beijing University of Posts and Telecommunications</a></li>
-						</ul> -->
-						<p style="padding-bottom: 1rem;"><a href="https://www.bupt.edu.cn/" style="font-size: 1.2rem;">Beijing University of Posts and Telecommunications</a></p>
-					    
-					</div>
 				</aside>
 
 
@@ -298,7 +297,7 @@
 						<a href="cfp.html" title="">Call for Paper</a>
 					</nav>
 					<p style="text-align: center;font-size: 1.1rem;"><a href="#">Back to top</a></p>
-					<p class="text-center">© Copyright © 2022.Beijing University of Posts and Telecommunications.</p>
+					<p class="text-center">© Copyright 2022 IEEE - All rights reserved.</p>
 				</div>
 
 			</footer>
@@ -312,6 +311,10 @@
 		<script src="js/jquery-3.2.1.slim.min.js"></script>
 		<script src="js/popper.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-
+        <!-- <script type="text/javascript">
+			function ahide(){
+				$('.cc-window').hide()
+			}
+		</script> -->
 	</body>
 </html>
