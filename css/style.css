@@ -6558,9 +6558,10 @@ article h2.article-title {
   margin-bottom: 0.6rem;
   letter-spacing: -2px; }
   
-article h3.article-title {
-  font-size: 2rem;
-  margin-bottom: 1.1rem; }
+article h3 {
+  font-size: 1.3rem; 
+  margin-bottom:0.4rem;
+  margin-top:1.2rem;}
 
 article p.article-meta {
   color: #ccc;
@@ -6624,7 +6625,7 @@ Better nesting of list groups
 	background-color: #507dbc;
     position: relative;
 	display: block;
-	padding: 0.3rem 1.5rem ;
+	padding: 0.3rem 1.8rem ;
 	font-weight: bold;
 	width: -webkit-fit-content;
 }
@@ -6687,4 +6688,28 @@ Better nesting of list groups
 	text-align: center;
 	white-space: nowrap;
 	cursor: pointer;
+}
+
+.pic-word{
+	display:flex;
+	align-items: center;
+	flex-wrap:nowrap;
+}
+	
+.picture1{
+	margin-right:3rem;
+	width: 15%;
+}
+	
+.word1{
+    width:85%;
+}
+.picture2{
+	
+	width: 17%;
+}
+	
+.word2{
+	margin-left:1.57rem;
+    width:83%;
 }
