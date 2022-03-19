@@ -6653,7 +6653,7 @@ Better nesting of list groups
 	position: fixed;
 	overflow: hidden;
 	box-sizing: border-box;
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 1.5em;
 	display: -ms-flexbox;
 	display: flex;

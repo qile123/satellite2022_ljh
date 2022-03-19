@@ -59,7 +59,21 @@
 	</head>
 
 	<body>
-
+		<div role="dialog" aria-live="polite" aria-label="cookieconsent" aria-describedby="cookieconsent:desc"
+			class="cc-window" style="display: none;">
+			<span class="cc-message" style="margin-right: 2rem;">
+				IEEE websites place cookies on your device to give you the best user experience. By using our websites,
+				you agree to the placement of these cookies. To learn more, read our
+				<a aria-label="learn more about cookies" role="button" tabindex="0"
+					href="https://www.ieee.org/security-privacy.html" target="_blank">
+					Privacy Policy
+				</a>
+			</span>
+			<div class="cc-compliance">
+				<a aria-label="dismiss cookie message" role="button" tabindex="0" onclick="setCookie()" class="cc-btn">Accept & Close</a>
+			</div>
+		</div>
+		
 		<div class="nav">
 			<div class="container">
 				<nav>
@@ -235,6 +249,15 @@
 								pages in the proceedings.</p>
 						</article>
 					</div>
+					
+					<div class="block-title">
+						<h2>Patrons</h2>
+					</div>
+					<div class="sidebar-box-bg">
+						<div class="patrons-logo">
+							<a class="brand" href="http://www.tiansuan.org.cn"><img src="img/tiansuan.png" style="height: 180px;"/></a>
+						</div>
+					</div>
 				</div>
 
 
@@ -271,6 +294,38 @@
 		<script src="js/jquery-3.2.1.slim.min.js"></script>
 		<script src="js/popper.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-
+		<script type="text/javascript">
+					function setCookie(){
+						$('.cc-window').hide();
+						var date=new Date();
+						var expire = 7*24*60*60*1000; //以毫秒为单位
+						date.setTime(date.getTime() + expire);
+						document.cookie = "permission=" + escape("yes") + ";expires=" + date.toGMTString();
+					}
+					
+					function getCookie(){
+						
+						var arr = document.cookie.split(';');
+						var i=0;
+						for(i=0;i<arr.length;i++){
+							var arr2=arr[i].split('=');
+							if(arr2[0]=="permission"){
+								var value = unescape(arr2[1]);
+								return value;
+							}
+						}
+						return "no";
+					}
+					function main(){
+						
+						var flag=getCookie();
+						if(flag == "no"){
+							$('.cc-window').show();
+						}
+					}
+					window.onload=function(){
+						main();   				
+					}
+		</script>
 	</body>
 </html>
