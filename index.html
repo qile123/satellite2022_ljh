@@ -53,7 +53,6 @@
 			strong {
 				color: #507dbc;
 			}
-
 		</style>
 		<!-- Font Awesome -->
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -71,7 +70,8 @@
 				</a>
 			</span>
 			<div class="cc-compliance">
-				<a aria-label="dismiss cookie message" role="button" tabindex="0" onclick="setCookie()" class="cc-btn">Accept & Close</a>
+				<a aria-label="dismiss cookie message" role="button" tabindex="0" onclick="setCookie()"
+					class="cc-btn">Accept & Close</a>
 			</div>
 		</div>
 
@@ -94,7 +94,8 @@
 					<a class="brand" href="#"><img src="img/1.logo.png" alt="Logo"></a>
 				</div>
 				<div class="logo1">
-					<a class="brand" href="https://www.computer.org/"><img src="img/logo1/IEEE-CS_LogoTM-white.png" alt="Logo"></a>
+					<a class="brand" href="https://www.computer.org/"><img src="img/logo1/IEEE-CS_LogoTM-white.png"
+							alt="Logo"></a>
 				</div>
 				<div class="logo2">
 					<a class="brand" href="https://www.ieee.org/"><img src="img/logo2/ieee_white.png" alt="Logo"></a>
@@ -125,22 +126,24 @@
 							<a class="nav-link" href="about.html">About</a>
 						</li>
 						<li class="nav-item dropdown titleBar ">
-							<a class="nav-link dropdown-toggle " href="authors.html"
-								role="button" aria-haspopup="true" aria-expanded="false">Authors</a>
+							<a class="nav-link dropdown-toggle " href="authors.html" role="button" aria-haspopup="true"
+								aria-expanded="false">Authors</a>
 							<div class="dropdown-menu navbar-dark bg-primary">
 								<a class="dropdown-item" href="cfp.html">Call for Papers</a>
 								<a class="dropdown-item" href="cfdap.html">Call for Demos and Posters</a>
+								<a class="dropdown-item" href="cfstian.html">Call for Satellite Technology Innovation
+									Award Nomination</a>
 							</div>
 						</li>
 						<li class="nav-item dropdown titleBar ">
-							<a class="nav-link dropdown-toggle " href="org_committee.html"
-								role="button" aria-haspopup="true" aria-expanded="false">Committee</a>
+							<a class="nav-link dropdown-toggle " href="org_committee.html" role="button"
+								aria-haspopup="true" aria-expanded="false">Committee</a>
 							<div class="dropdown-menu navbar-dark bg-primary">
 								<a class="dropdown-item" href="org_committee.html">Organizing Committee</a>
 								<a class="dropdown-item" href="t_committee.html">TPC Members</a>
 							</div>
 						</li>
-						
+
 						<li class="nav-item ">
 							<a class="nav-link" href="program.html">Program</a>
 						</li>
@@ -221,13 +224,13 @@
 								exchange the fundamental advances in state of the art and practice of Satellite
 								computing in the field of Computer Science and Electronic Engineers.</p>
 						</article>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
 
 					</div>
 
@@ -256,7 +259,8 @@
 					</div>
 					<div class="sidebar-box-bg">
 						<div class="patrons-logo">
-							<a class="brand" href="http://www.tiansuan.org.cn"><img src="img/tiansuan.png" style="height: 180px;"/></a>
+							<a class="brand" href="http://www.tiansuan.org.cn"><img src="img/tiansuan.png"
+									style="height: 180px;" /></a>
 						</div>
 					</div>
 				</div>
@@ -331,41 +335,42 @@
 		<script src="js/jquery-3.2.1.slim.min.js"></script>
 		<script src="js/popper.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-        <script type="text/javascript">
-        			function setCookie(){
-						$('.cc-window').hide();
-        				var date=new Date();
-        				var expire = 7*24*60*60*1000; //以毫秒为单位
-        				date.setTime(date.getTime() + expire);
-        				document.cookie = "permission=" + escape("yes") + ";expires=" + date.toGMTString();
-						// console.log(typeof document.cookie);
-						// console.log("sdf");
-        			}
-        			
-        			function getCookie(){
-        				
-        				var arr = document.cookie.split(';');
-        				var i=0;
-        				for(i=0;i<arr.length;i++){
-        					var arr2=arr[i].split('=');
-							// cookiec中有多个键值对时，竟然会默认在';' 后加空格，相当于arr2[0]是" permission"
-        					if(arr2[0].trim() == "permission"){
-        						var value = unescape(arr2[1]);
-        						return value;
-        					}
-        				}
-        				return "no";
-        			}
-        			function main(){
-						
-        				var flag=getCookie();
-        				if(flag == "no"){
-        					$('.cc-window').show();
-        				}
-        			}
-        			window.onload=function(){
-        				main();   				
-        			}
-        </script>
+		<script type="text/javascript">
+			function setCookie() {
+				$('.cc-window').hide();
+				var date = new Date();
+				var expire = 7 * 24 * 60 * 60 * 1000; //以毫秒为单位
+				date.setTime(date.getTime() + expire);
+				document.cookie = "permission=" + escape("yes") + ";expires=" + date.toGMTString();
+				// console.log(typeof document.cookie);
+				// console.log("sdf");
+			}
+
+			function getCookie() {
+
+				var arr = document.cookie.split(';');
+				var i = 0;
+				for (i = 0; i < arr.length; i++) {
+					var arr2 = arr[i].split('=');
+					// cookiec中有多个键值对时，竟然会默认在';' 后加空格，相当于arr2[0]是" permission"
+					if (arr2[0].trim() == "permission") {
+						var value = unescape(arr2[1]);
+						return value;
+					}
+				}
+				return "no";
+			}
+
+			function main() {
+
+				var flag = getCookie();
+				if (flag == "no") {
+					$('.cc-window').show();
+				}
+			}
+			window.onload = function() {
+				main();
+			}
+		</script>
 	</body>
 </html>
