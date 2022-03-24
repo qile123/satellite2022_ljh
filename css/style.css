@@ -6721,3 +6721,49 @@ Better nesting of list groups
 
 
 .titleBar:hover .dropdown-menu{display: block;}
+
+.header-wrap-1 {
+	background-color: #507dbc;
+	height: 115px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.logo3{
+	
+	margin-top: 5px;
+	margin-left: 20px;
+	margin-right: 25px;
+}
+
+.logo3 img {
+	height: 60px;
+}
+	
+.info{
+	margin-right:70px
+}
+
+.logo1 {
+	flex-grow: 1;
+}
+
+.logo2 {
+	flex-grow: 1;
+}
+
+.logo1 img {
+	height: 55px;
+}
+
+.logo2 img {
+	height: 48px;
+}
+
+.firstword {
+	border-bottom: 2px solid #507dbc;
+}
+
+strong {
+	color: #507dbc;
+}
