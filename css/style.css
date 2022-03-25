@@ -6472,6 +6472,7 @@ Navbar
   padding: 0 0; }
 
 .navbar .active .nav-link {
+     /* #325383 */
   background-color: #507dbc; }
 
 .navbar-dark .navbar-nav .nav-link,
@@ -6722,8 +6723,9 @@ Better nesting of list groups
 
 .titleBar:hover .dropdown-menu{display: block;}
 
+/* #507dbc */
 .header-wrap-1 {
-	background-color: #507dbc;
+	background-color: #5d95dd; 
 	height: 115px;
 	display: flex;
 	align-items: center;
