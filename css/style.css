@@ -6769,3 +6769,7 @@ Better nesting of list groups
 strong {
 	color: #507dbc;
 }
+
+article p{
+	text-align: justify;
+}
