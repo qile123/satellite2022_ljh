@@ -6773,3 +6773,25 @@ strong {
 article p{
 	text-align: justify;
 }
+button {
+    background-color: #507dbc; /* Green */
+    border: none;
+	/* border-color: #004f7f; */
+    color: #FFFFFF;
+    padding: 10px 16px;
+	border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+    font-size: 18border: none;px;
+	font-weight:bold;
+}
+button:hover {
+    background-color: #3a5c8b; /* Green */
+	border: none;
+    color: white;
+}
+td {
+	font-size: 1 rem;
+}
+
